@@ -12,23 +12,21 @@ public class While_Loops {
 
         boolean isFinished = false;
 
-        while (!isFinished){
+        while (!isFinished) {
 
             int randomNumber = random.nextInt(10, 31);
 
             System.out.println("Random Number: " + randomNumber);
 
-            if (randomNumber == 15 || randomNumber == 25){
+            if (randomNumber == 15 || randomNumber == 25) {
 
                 isFinished = true;
                 System.out.println("Finished");
 
 
-
             }
 
         }
-
 
 
     }

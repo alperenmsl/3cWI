@@ -10,10 +10,10 @@ public class Switch_Statement {
         // etc.
 
         Random random = new Random();
-        int randomNumber = random.nextInt(5,11);
+        int randomNumber = random.nextInt(5, 11);
 
 
-        switch (randomNumber){
+        switch (randomNumber) {
             case 10:
                 System.out.println("Die Zufallszahl ist 10");
                 break;
