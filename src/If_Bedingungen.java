@@ -55,5 +55,6 @@ public class If_Bedingungen {
             System.out.println("Erste Zahl klein, zweite kein 50er");
         }
 
+
     }
 }
