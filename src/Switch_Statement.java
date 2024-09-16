@@ -37,6 +37,8 @@ public class Switch_Statement {
             case 5:
                 System.out.println("Die Zufallszahl ist 5");
                 break;
+
+
         }
 
     }
