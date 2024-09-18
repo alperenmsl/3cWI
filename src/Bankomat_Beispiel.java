@@ -11,10 +11,6 @@ public class Bankomat_Beispiel {
         // 4. Beenden
 
 
-        Scanner scanner = new Scanner(System.in);
-        int selection = scanner.nextInt();
-
-        System.out.println(selection);
 
 
     }
