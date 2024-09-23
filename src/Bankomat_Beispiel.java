@@ -56,8 +56,6 @@ public class Bankomat_Beispiel {
                     isFinished = true;
                     break;
             }
-
-
         }
 
 
