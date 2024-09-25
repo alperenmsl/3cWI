@@ -14,7 +14,7 @@ public class Bankomat_Beispiel {
         boolean isFinished = false;
         Scanner scanner = new Scanner(System.in);
 
-        while (!isFinished){
+        while (!isFinished) {
 
             System.out.println("1. Einzahlen");
             System.out.println("2. Auszahlen");
@@ -22,11 +22,11 @@ public class Bankomat_Beispiel {
             System.out.println("4. Beenden");
             int selection = scanner.nextInt();
 
-            switch (selection){
+            switch (selection) {
                 case 1:
                     System.out.println("Geben Sie den Betrag ein, der ausgezahlt werden soll: ");
                     int einzahlen = scanner.nextInt();
-                    if (einzahlen > balance){
+                    if (einzahlen > balance) {
                         balance += einzahlen;
                         System.out.println(einzahlen + "€ wurden erfolgreich eingezahlt!");
                     } else {
@@ -37,7 +37,7 @@ public class Bankomat_Beispiel {
                 case 2:
                     System.out.println("Geben Sie den Betrag ein, der ausgezahlt werden soll: ");
                     int auszahlen = scanner.nextInt();
-                    if (auszahlen > 0 && auszahlen <= balance){
+                    if (auszahlen > 0 && auszahlen <= balance) {
                         balance -= auszahlen;
                         System.out.println(auszahlen + "€ wurden erfolgreich ausgezahlt!");
                     } else if (auszahlen > balance) {
