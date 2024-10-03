@@ -1,10 +1,13 @@
 import java.util.Scanner;
 
 public class TicTacToeGame {
+    static int [][] field = new int [3][3];
+    static Scanner scanner = new Scanner(System.in);
+    static boolean isPlayer1 = true;
+
     public static void main(String[] args) {
 
         boolean isFinished = false;
-        Scanner scanner = new Scanner(System.in);
         System.out.println("Hallo Alperen! Wollen wir Tic Tac Toe Spielen?");
 
         while (!isFinished) {
@@ -16,6 +19,21 @@ public class TicTacToeGame {
             switch (selection){
                 case 1:
                     System.out.println("Alles Klar! Spiel wird gestartet!");
+
+                        if (isPlayer1){
+                            System.out.println("Player 1");
+                        } else {
+                            System.out.println("Player 2");
+                        }
+                        String inputOfPlayer = scanner.next();
+                        String[] input = inputOfPlayer.split(",");
+                        int input1 = Integer.parseInt(input[0]);
+                        int input2 = Integer.parseInt(input[2]);
+
+
+                        isPlayer1 = !isPlayer1;
+
+
 
                     break;
 
@@ -46,5 +64,8 @@ public class TicTacToeGame {
             }
             System.out.println();  // Neue Zeile nach jeder Reihe
         }
+    }
+    public static void run(){
+
     }
 }
