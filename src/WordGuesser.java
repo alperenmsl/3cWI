@@ -19,10 +19,6 @@ public class WordGuesser {
             } else {
                 System.out.println("You didn't guess the word right please try it again.");
             }
-
-
         }
-
-
     }
 }
