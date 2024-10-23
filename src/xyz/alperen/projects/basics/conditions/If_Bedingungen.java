@@ -1,3 +1,5 @@
+package xyz.alperen.projects.basics.conditions;
+
 import java.util.Random;
 
 public class If_Bedingungen {

@@ -1,4 +1,4 @@
-package OwnPractise;
+package xyz.alperen.projects.OwnPractise;
 
 public class NameBackwards {
     public static void main(String[] args) {

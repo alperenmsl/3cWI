@@ -1,4 +1,4 @@
-package OwnPractise;
+package xyz.alperen.projects.OwnPractise;
 
 public class variables {
     public static void main(String[] args) {

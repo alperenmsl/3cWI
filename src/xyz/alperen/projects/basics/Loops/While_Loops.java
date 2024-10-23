@@ -1,3 +1,5 @@
+package xyz.alperen.projects.basics.Loops;
+
 import java.util.Random;
 
 public class While_Loops {

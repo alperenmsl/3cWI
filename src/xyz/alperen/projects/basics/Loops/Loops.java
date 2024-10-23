@@ -1,3 +1,5 @@
+package xyz.alperen.projects.basics.Loops;
+
 public class Loops {
     public static void main(String[] args) {
         //Zähle in einem For-Loop die Zahlen von 1 bis 100 (inklusive) zusammen

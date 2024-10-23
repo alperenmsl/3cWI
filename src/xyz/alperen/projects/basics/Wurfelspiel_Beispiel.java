@@ -1,3 +1,5 @@
+package xyz.alperen.projects.basics;
+
 import java.util.Random;
 import java.util.Scanner;
 

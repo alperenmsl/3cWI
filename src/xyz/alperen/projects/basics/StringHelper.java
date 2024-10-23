@@ -1,3 +1,5 @@
+package xyz.alperen.projects.basics;
+
 public class StringHelper {
     public static void main(String[] args) {
         // Is Palindrome (String): boolean
