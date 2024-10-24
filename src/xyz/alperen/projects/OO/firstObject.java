@@ -21,6 +21,7 @@ public class firstObject {
     c2.color = "Black";
     c2.fuel = 3;
 
+
         System.out.println("Brand: "+c1.brand);
         System.out.println("Modell: "+c1.modell);
         System.out.println("Serial Number: "+c1.serialNumber);
