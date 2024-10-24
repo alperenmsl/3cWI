@@ -14,6 +14,7 @@ public class WordGuesserV2 {
             guessedWord[i] = '*';
         }
 
+
         boolean wordGuessed = false;
         int attemptsLeft = 5;
 
