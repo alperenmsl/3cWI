@@ -10,6 +10,8 @@ public class car {
     public String serialNumber;
     public String color;
 
+
+
     public void turboBoost () {
         if (fuelAmount > (fuelCapacity * 0.10)) {
             System.out.println("Turbo Boost");
@@ -31,4 +33,6 @@ public class car {
     public double getRemainingRange() {
         return (fuelAmount / fuelConsumption) * 100;
     }
+
+
 }
