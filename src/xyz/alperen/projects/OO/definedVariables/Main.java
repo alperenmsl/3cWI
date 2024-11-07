@@ -38,6 +38,7 @@ public class Main {
                     System.out.println("Brand: " + car.brand);
                     System.out.println("Modell: " + car.modell);
                     System.out.println("Color: " + car.color);
+                    System.out.println("Serial Number: (M1234) " +car.serialNumber);
                     break;
 
                 case 2:
