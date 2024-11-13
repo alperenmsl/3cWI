@@ -9,10 +9,6 @@ import java.io.File;
 import java.io.IOException;
 
 public class Car {
-
-    public int fuelAmount;
-    public double fuelConsumption;
-    public int fuelCapacity;
     public String brand;
     public String modell;
     public String serialNumber;
@@ -22,23 +18,7 @@ public class Car {
         this.brand = brand;
         this.modell = modell;
         this.color = color;
-        this.fuelAmount = 100;
-        this.fuelCapacity = 50;
-        this.fuelConsumption = 5.0;
     }
-
-    public void turboBoost() {
-        if (fuelAmount > (fuelCapacity * 0.10)) {
-            System.out.println("Turbo Boost activated");
-        } else {
-            System.out.println("Not enough fuel to get a super Boost!");
-        }
-    }
-
-    public double getRemainingRange() {
-        return (fuelAmount / fuelConsumption) * 100;
-    }
-
 
     public void doBreak() {
         System.out.println("Ich bremse.");

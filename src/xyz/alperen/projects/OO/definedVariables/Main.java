@@ -1,6 +1,7 @@
 package xyz.alperen.projects.OO;
 
 import xyz.alperen.projects.OO.definedVariables.Car;
+import xyz.alperen.projects.OO.definedVariables.motor;
 
 import java.util.Scanner;
 
@@ -31,6 +32,8 @@ public class Main {
 
                     System.out.println("Welche Farbe soll das Auto haben: ");
                     String color = scanner.nextLine();
+
+
 
                     car = new Car(brand, modell, color);
 
@@ -67,8 +70,8 @@ public class Main {
                         System.out.println("Bitte erstelle zuerst ein Auto.");
                     } else {
                         System.out.println("Motorinformationen:");
-                        car.turboBoost();
-                        System.out.println("Verbleibende Reichweite: " + car.getRemainingRange() + " km");
+                        motor.turboBoost();
+                        System.out.println("Verbleibende Reichweite: " + motor.getRemainingRange() + " km");
                     }
                     break;
 
