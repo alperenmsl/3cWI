@@ -1,15 +1,22 @@
 package xyz.alperen.projects.OO.definedVariables.newCar;
 
-
-
 public class Car {
-    // Instanzvariablen
+    // Instanzvariablen (private für Kapselung)
     private int fuelConsumption;
     private int fuelAmount;
     private int fuelCapacity;
     private String brand;
     private String serialNumber;
     private String color;
+
+    public Car(String brand, String serialNumber, String color, int fuelConsumption, int fuelCapacity) {
+        this.brand = brand;
+        this.serialNumber = serialNumber;
+        this.color = color;
+        this.fuelConsumption = fuelConsumption;
+        this.fuelCapacity = fuelCapacity;
+        this.fuelAmount = fuelCapacity; // Auto startet mit vollem Tank
+    }
 
     // Methode: Bremsen
     public void doBreak() {
@@ -37,9 +44,9 @@ public class Car {
         return (fuelAmount / (double) fuelConsumption) * 100; // Reichweite in km
     }
 
-    // Methode: Fahren (zum Testen)
+    // Methode: Fahren
     public void drive() {
-        if (fuelAmount > fuelConsumption) {
+        if (fuelAmount >= fuelConsumption) {
             fuelAmount -= fuelConsumption;
             System.out.println("I am driving");
         } else {
@@ -47,57 +54,56 @@ public class Car {
         }
     }
 
-    public void setFuelCapacity(int fuelCapacity) {
-        this.fuelCapacity = fuelCapacity;
-    }
-
-    public void setBrand(String brand) {
-        this.brand = brand;
-    }
-
-    public void setFuelAmount(int fuelAmount) {
-        if (fuelAmount > 100) {
-            this.fuelAmount = 100;
-        } else {
-            this.fuelAmount = fuelAmount;
-        }
-    }
-
-    public void setSerialNumber(String serialNumber) {
-        this.serialNumber = serialNumber;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
+    // Getter und Setter
+    public int getFuelConsumption() {
+        return fuelConsumption;
     }
 
     public void setFuelConsumption(int fuelConsumption) {
         this.fuelConsumption = fuelConsumption;
     }
 
-    public String getSerialNumber() {
-        return serialNumber;
-    }
-
     public int getFuelAmount() {
         return fuelAmount;
+    }
+
+    public void setFuelAmount(int fuelAmount) {
+        if (fuelAmount > fuelCapacity) {
+            this.fuelAmount = fuelCapacity;
+        } else {
+            this.fuelAmount = fuelAmount;
+        }
     }
 
     public int getFuelCapacity() {
         return fuelCapacity;
     }
 
-    public int getFuelConsumption() {
-        return fuelConsumption;
+    public void setFuelCapacity(int fuelCapacity) {
+        this.fuelCapacity = fuelCapacity;
     }
 
     public String getBrand() {
         return brand;
     }
 
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public String getSerialNumber() {
+        return serialNumber;
+    }
+
+    public void setSerialNumber(String serialNumber) {
+        this.serialNumber = serialNumber;
+    }
+
     public String getColor() {
         return color;
     }
 
-
+    public void setColor(String color) {
+        this.color = color;
+    }
 }

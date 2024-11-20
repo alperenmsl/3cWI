@@ -3,24 +3,18 @@ import xyz.alperen.projects.OO.definedVariables.newCar.Car;
 
 public class Main {
     public static void main(String[] args) {
-        Car c1 = new Car();
-        c1.setFuelAmount(70);
-        c1.setBrand("Audi");
-        c1.setFuelConsumption(7);
-        c1.setSerialNumber("A1234");
+        Car myCar = new Car("BMW", "B1234", "Schwarz", 8, 50);
 
 
-        Car c2 = new Car();
-        c2.setFuelAmount(20);
-        c2.setBrand("Mercedes");
-        c2.setFuelConsumption(6);
-        c2.setSerialNumber("M1234");
+        System.out.println("Marke: " + myCar.getBrand());
+        System.out.println("Seriennummer: " + myCar.getSerialNumber());
+        System.out.println("Farbe: " + myCar.getColor());
+        System.out.println("Tankkapazität: " + myCar.getFuelCapacity() + " Liter");
+        System.out.println("Verbrauch: " + myCar.getFuelConsumption() + " L/100km");
+        System.out.println("Verbleibende Reichweite: " + myCar.getRemainingRange() + " km");
 
-        System.out.println(c2.getFuelAmount());
-        c2.drive();
-        System.out.println(c2.getFuelAmount());
-        c1.turboBoost();
-        c1.honk(2);
+        myCar.drive();
+        System.out.println("Verbleibender Tankinhalt: " + myCar.getFuelAmount() + " Liter");
 
         //D R Y
     }
