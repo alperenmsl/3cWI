@@ -1,7 +1,7 @@
 package xyz.alperen.projects.OO;
 
 import xyz.alperen.projects.OO.definedVariables.Car;
-import xyz.alperen.projects.OO.definedVariables.motor;
+import xyz.alperen.projects.OO.definedVariables.Motor;
 
 import java.util.Scanner;
 
@@ -12,6 +12,7 @@ public class Main {
         boolean isFinished = false;
 
         Car car = null;
+        Motor motor = null;
 
         while (!isFinished) {
             System.out.println("1. New Car");
@@ -33,15 +34,14 @@ public class Main {
                     System.out.println("Welche Farbe soll das Auto haben: ");
                     String color = scanner.nextLine();
 
-
-
                     car = new Car(brand, modell, color);
+                    motor = new Motor();
 
                     System.out.println("\nAuto wurde erstellt -");
                     System.out.println("Brand: " + car.brand);
                     System.out.println("Modell: " + car.modell);
                     System.out.println("Color: " + car.color);
-                    System.out.println("Serial Number: (M1234) " +car.serialNumber);
+                    System.out.println("Serial Number: (M1234) " + car.serialNumber);
                     break;
 
                 case 2:
@@ -66,7 +66,7 @@ public class Main {
                     break;
 
                 case 4:
-                    if (car == null) {
+                    if (motor == null) {
                         System.out.println("Bitte erstelle zuerst ein Auto.");
                     } else {
                         System.out.println("Motorinformationen:");
@@ -74,7 +74,6 @@ public class Main {
                         System.out.println("Verbleibende Reichweite: " + motor.getRemainingRange() + " km");
                     }
                     break;
-
 
                 case 5:
                     System.out.println("Danke für den Besuch!");

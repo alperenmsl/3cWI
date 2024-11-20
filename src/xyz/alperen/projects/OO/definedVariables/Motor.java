@@ -1,11 +1,11 @@
 package xyz.alperen.projects.OO.definedVariables;
 
-public class motor {
+public class Motor {
     public int fuelAmount;
     public double fuelConsumption;
     public int fuelCapacity;
 
-    public motor() {
+    public Motor() {
         this.fuelAmount = 100;
         this.fuelCapacity = 50;
         this.fuelConsumption = 5.0;
