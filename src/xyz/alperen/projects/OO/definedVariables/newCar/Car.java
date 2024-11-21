@@ -6,11 +6,15 @@ public class Car {
     private int fuelAmount;
     private int fuelCapacity;
     private String brand;
+    private String modell;
     private String serialNumber;
     private String color;
+    private Engine engine;
 
-    public Car(String brand, String serialNumber, String color, int fuelConsumption, int fuelCapacity) {
+    public Car(Engine engine, String brand, String modell, String serialNumber, String color, int fuelConsumption, int fuelCapacity) {
         this.brand = brand;
+        this.modell = modell;
+        this.engine = engine;
         this.serialNumber = serialNumber;
         this.color = color;
         this.fuelConsumption = fuelConsumption;
@@ -103,7 +107,19 @@ public class Car {
         return color;
     }
 
+    public String getModell() {
+        return modell;
+    }
+
     public void setColor(String color) {
         this.color = color;
+    }
+
+    public Engine getEngine() {
+        return engine;
+    }
+
+    public void setEngine(Engine engine) {
+        this.engine = engine;
     }
 }
