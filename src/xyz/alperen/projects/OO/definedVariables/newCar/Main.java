@@ -3,8 +3,13 @@ import xyz.alperen.projects.OO.definedVariables.newCar.Car;
 
 public class Main {
     public static void main(String[] args) {
+        RearMirror r1 = new RearMirror(100, 0);
+        RearMirror r2 = new RearMirror(90, -40);
         Engine e1 = new Engine(450, Engine.TYPE.BENZIN);
+
         Car myCar = new Car(e1, "BMW","M4 Competition", "B1234", "Schwarz", 15, 20);
+        myCar.addMirror(r1);
+        myCar.addMirror(r2);
 
         System.out.println("Marke: " + myCar.getBrand());
         System.out.println("Modell: "+ myCar.getModell());
@@ -15,6 +20,9 @@ public class Main {
         System.out.println("Verbleibende Reichweite: " + myCar.getRemainingRange() + " km");
         System.out.println("HorsePower: "+e1.getHorsePower());
         System.out.println("Kraftstoff: "+e1.getKraftstoff());
+        System.out.println("Mirror 2 Size: "+myCar.getMirrors().get(1).getSize());
+        System.out.println("Mirror 2 Position: "+myCar.getMirrors().get(1).getPosition());
+
 
         myCar.drive(100);
         System.out.println("Verbleibender Tankinhalt: " + myCar.getFuelAmount() + " Liter");

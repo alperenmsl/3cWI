@@ -1,5 +1,8 @@
 package xyz.alperen.projects.OO.definedVariables.newCar;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Car {
     // Instanzvariablen (private für Kapselung)
     private int fuelConsumption;
@@ -10,6 +13,8 @@ public class Car {
     private String serialNumber;
     private String color;
     private Engine engine;
+    private List<RearMirror> mirrors;
+
 
     public Car(Engine engine, String brand, String modell, String serialNumber, String color, int fuelConsumption, int fuelCapacity) {
         this.brand = brand;
@@ -20,6 +25,11 @@ public class Car {
         this.fuelConsumption = fuelConsumption;
         this.fuelCapacity = fuelCapacity;
         this.fuelAmount = fuelCapacity; // Auto startet mit vollem Tank
+        this.mirrors = new ArrayList<>();
+    }
+
+    public void addMirror(RearMirror rearMirror){
+        this.mirrors.add(rearMirror);
     }
 
     public void drive(int speed) {
@@ -77,6 +87,12 @@ public class Car {
     }
 
     // Getter und Setter
+
+
+    public List<RearMirror> getMirrors() {
+        return mirrors;
+    }
+
     public int getFuelConsumption() {
         return fuelConsumption;
     }
