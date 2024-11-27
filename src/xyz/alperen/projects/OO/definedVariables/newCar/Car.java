@@ -22,6 +22,24 @@ public class Car {
         this.fuelAmount = fuelCapacity; // Auto startet mit vollem Tank
     }
 
+    public void drive(int speed) {
+        if (speed < 1 || speed > 100) {
+            System.out.println("Ungültige Geschwindigkeit! Geschwindigkeit muss zwischen 1 und 100 sein.");
+            return;
+        }
+
+        engine.drive(speed);
+
+        int fuelConsumptionAtSpeed = (int) Math.ceil(fuelConsumption * (speed / 50.0));
+
+        if (fuelAmount >= fuelConsumptionAtSpeed) {
+            fuelAmount -= fuelConsumptionAtSpeed;
+            System.out.println("Fahre mit einer Geschwindigkeit von: " + speed + " km/h. Verbleibender Tank: " + fuelAmount + "L");
+        } else {
+            System.out.println("Nicht genügend Tank um mit einer Geschwindigkeit von: " + speed + " km/h zu fahren.");
+        }
+    }
+
     // Methode: Bremsen
     public void doBreak() {
         System.out.println("Ich bremse");
