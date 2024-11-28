@@ -14,6 +14,9 @@ public class Car {
     private String color;
     private Engine engine;
     private List<RearMirror> mirrors;
+    private List<Tires> tires = new ArrayList<>();
+
+
 
 
     public Car(Engine engine, String brand, String modell, String serialNumber, String color, int fuelConsumption, int fuelCapacity) {
@@ -26,7 +29,32 @@ public class Car {
         this.fuelCapacity = fuelCapacity;
         this.fuelAmount = fuelCapacity; // Auto startet mit vollem Tank
         this.mirrors = new ArrayList<>();
+        this.tires = new ArrayList<>();
     }
+
+    public void printTires() {
+        if (tires.isEmpty()) {
+            System.out.println("Das Auto hat keine Reifen.");
+        } else {
+            System.out.println("Reifen am Auto:");
+            for (Tires tire : tires) {
+                System.out.println("Zoll: " + tire.getZoll() +
+                        ", Typ: " + tire.getTyp() +
+                        ", Profiltiefe: " + tire.getProfilTiefe() + " mm" +
+                        ", Luftdruck: " + tire.getLuftdruck() + " bar");
+            }
+        }
+    }
+
+    public List<Tires> getTires() {
+        return tires;
+    }
+
+
+    public void addTires(Tires tire) {
+        this.tires.add(tire);
+    }
+
 
     public void addMirror(RearMirror rearMirror){
         this.mirrors.add(rearMirror);
