@@ -1,4 +1,4 @@
-package xyz.alperen.projects.OO.definedVariables.newCar;
+package xyz.alperen.projects.OO.definedVariables.Car;
 
 public class Battery {
     private double chargeLevel;

@@ -1,5 +1,4 @@
-package xyz.alperen.projects.OO.definedVariables.newCar;
-import xyz.alperen.projects.OO.definedVariables.newCar.Car;
+package xyz.alperen.projects.OO.definedVariables.Car;
 
 public class Main {
     public static void main(String[] args) {
@@ -60,8 +59,6 @@ public class Main {
 
         // Ausschalten der Fernbedienung
         remote.turnOff();
-
-
 
         //D R Y
     }

@@ -1,4 +1,4 @@
-package xyz.alperen.projects.OO.definedVariables.newCar;
+package xyz.alperen.projects.OO.definedVariables.Car;
 
 import java.util.ArrayList;
 import java.util.List;

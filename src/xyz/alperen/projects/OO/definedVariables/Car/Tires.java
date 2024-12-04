@@ -1,4 +1,4 @@
-package xyz.alperen.projects.OO.definedVariables.newCar;
+package xyz.alperen.projects.OO.definedVariables.Car;
 
 public class Tires {
     private int zoll; // Größe - 10 zoll = 25,4 cm
