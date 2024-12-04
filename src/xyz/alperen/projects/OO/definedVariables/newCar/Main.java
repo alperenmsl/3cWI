@@ -12,6 +12,13 @@ public class Main {
         myCar.addMirror(r1);
         myCar.addMirror(r2);
 
+        // Battery 1 und Battery 2
+        Battery battery1 = new Battery(80);
+        Battery battery2 = new Battery(60);
+
+        // Erstellen der Fernbedienung mit den zwei Batterien
+        RemoteControl remote = new RemoteControl(battery1, battery2);
+
         // Reifen erstellen und hinzufügen
         Tires tire1 = new Tires(20,"Winter", 1.7, 2.5);
         Tires tire2 = new Tires(20,"Winter", 1.7, 2.5);
@@ -39,6 +46,20 @@ public class Main {
         System.out.println("Verbleibender Tankinhalt: " + myCar.getFuelAmount() + " Liter");
 
         myCar.printTires();
+
+        System.out.println("\n");
+
+        // Abfrage des Ladestatus
+        remote.getStatus();
+
+        // Einschalten der Fernbedienung
+        remote.turnOn();
+
+        // Abfrage des Ladestatus nach Nutzung
+        remote.getStatus();
+
+        // Ausschalten der Fernbedienung
+        remote.turnOff();
 
 
 
