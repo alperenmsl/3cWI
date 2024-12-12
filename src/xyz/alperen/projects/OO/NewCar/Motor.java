@@ -1,4 +1,4 @@
-package xyz.alperen.projects.OO.examples;
+package xyz.alperen.projects.OO.NewCar;
 
 public class Motor {
     private String type; // Diesel oder Benzin

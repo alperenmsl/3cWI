@@ -1,4 +1,4 @@
-package xyz.alperen.projects.OO.definedVariables.Car;
+package xyz.alperen.projects.OO.Car;
 
 public class RearMirror {
     private int size;

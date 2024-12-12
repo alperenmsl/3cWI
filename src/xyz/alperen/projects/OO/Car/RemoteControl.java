@@ -1,4 +1,4 @@
-package xyz.alperen.projects.OO.definedVariables.Car;
+package xyz.alperen.projects.OO.Car;
 
 public class RemoteControl {
     private Battery battery1;

@@ -1,4 +1,4 @@
-package xyz.alperen.projects.OO.definedVariables.Car;
+package xyz.alperen.projects.OO.Car;
 
 public class Main {
     public static void main(String[] args) {

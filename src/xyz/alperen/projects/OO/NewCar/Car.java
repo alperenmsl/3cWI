@@ -1,4 +1,4 @@
-package xyz.alperen.projects.OO.examples;
+package xyz.alperen.projects.OO.NewCar;
 
 public class Car {
     private String color;

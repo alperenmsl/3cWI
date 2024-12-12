@@ -1,4 +1,4 @@
-package xyz.alperen.projects.OO.definedVariables.Car;
+package xyz.alperen.projects.OO.Car;
 
 public class Engine {
     public enum TYPE {DIESEL, BENZIN, ELEKTRO}
