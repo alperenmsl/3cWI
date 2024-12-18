@@ -16,5 +16,7 @@ public class MainTruck {
         System.out.println("Trailer: "+t1.getTrailer());
         System.out.println("HorsePower: "+e1.getHorsePower());
         System.out.println("Kraftstoff: "+e1.getKraftstoff());
+        t1.drive();
+        t1.doBreak();
     }
 }

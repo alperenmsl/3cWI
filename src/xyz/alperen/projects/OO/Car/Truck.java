@@ -1,6 +1,6 @@
 package xyz.alperen.projects.OO.Car;
 
-public class Truck extends Car{
+public class Truck extends Car {
 
     private String trailer;
 
@@ -15,5 +15,15 @@ public class Truck extends Car{
 
     public void setTrailer(String trailer) {
         this.trailer = trailer;
+    }
+
+    @Override
+    public void drive() {
+        System.out.println("The Truck Driver is driving");
+    }
+
+    @Override
+    public void doBreak() {
+        System.out.println("The Truck Driver is breaking");
     }
 }
