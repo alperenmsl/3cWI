@@ -4,7 +4,7 @@ public class MainTruck {
     public static void main(String[] args) {
         Engine e1 = new Engine(580, Engine.TYPE.BENZIN);
 
-        Truck t1 = new Truck(e1, "MAN", "TGX", "M3786", "Black", 40, 400, "Water-Trailer");
+        Truck t1 = new Truck(e1, "MAN", "TGX", "T3786", "Black", 40, 400, "Water-Trailer");
 
         System.out.println("Truck Details -");
         System.out.println("Brand: "+t1.getBrand());
