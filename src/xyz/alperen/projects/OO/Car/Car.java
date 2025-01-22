@@ -105,6 +105,8 @@ public class Car {
         return (fuelAmount / (double) fuelConsumption) * 100; // Reichweite in km
     }
 
+
+
     // Methode: Fahren
     public void drive() {
         if (fuelAmount >= fuelConsumption) {
