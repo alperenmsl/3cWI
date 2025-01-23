@@ -1,6 +1,7 @@
 package xyz.alperen.projects.OO.BankKonto;
 
 import xyz.alperen.projects.OO.BankKonto.Accounts.CheckingsAccount;
+import xyz.alperen.projects.OO.BankKonto.Accounts.CreditsAccount;
 import xyz.alperen.projects.OO.BankKonto.Accounts.LaendleAccount;
 import xyz.alperen.projects.OO.BankKonto.Accounts.SavingAccounts;
 
@@ -23,5 +24,10 @@ public class app {
         la.withdraw(600);
         System.out.println("Ländle Account Balance: " + la.getBalance() + "€");
 
+        CreditsAccount cr = new CreditsAccount(7000, 5);
+        cr.withdraw(3000);
+        cr.withdraw(2000);
+        cr.zinsBerechner();
+        System.out.println("Credits Account Balance: " + cr.getBalance() + "€");
     }
 }
