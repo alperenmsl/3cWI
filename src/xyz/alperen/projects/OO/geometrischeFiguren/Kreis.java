@@ -12,3 +12,4 @@ public class Kreis extends GeometrischeFigur {
         return Math.PI * radius * radius; // Weil formel für Kreis ist Pi * radius² (Deshalb Radius * Radius)
     }
 }
+
