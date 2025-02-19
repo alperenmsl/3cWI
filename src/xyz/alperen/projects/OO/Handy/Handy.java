@@ -1,22 +1,44 @@
 package xyz.alperen.projects.OO.Handy;
 
+import java.util.List;
+
 public class Handy {
     private String color;
+    private Sim sim;
+    private Camera camera;
+    private SDCard sdCard;
 
-    public void takePicture(){
-        System.out.println("Taking picture");
+    public Handy(String color, Sim sim, Camera camera, SDCard sdCard) {
+        this.color = color;
+        this.sim = sim;
+        this.camera = camera;
+        this.sdCard = sdCard;
     }
 
-    public void makeCall(String makeCall){
-        System.out.println("Making a call");
+    public void takePicture() {
+        if (sdCard.getFreeSpace() > 0) {
+            PhoneFile photo = camera.makePicture();
+            sdCard.saveFile(photo);
+            System.out.println("Taking picture");
+        } else {
+            System.out.println("No enough free space");
+        }
     }
 
-    public void getFreeSpace(int freeSpace){
-        System.out.println("Get free space");
+    public void makeCall(String number) {
+        sim.doCall(number);
     }
 
-    public void printAllFiles(){
-        System.out.println("Printing all files");
+    public void printAllFiles() {
+        List<PhoneFile> files = sdCard.getFiles();
+        if (files.isEmpty()) {
+            System.out.println("No files on SD card.");
+        } else {
+            System.out.println("Files on SD card:");
+            for (PhoneFile file : files) {
+                file.getInfo();
+            }
+        }
     }
 
 }

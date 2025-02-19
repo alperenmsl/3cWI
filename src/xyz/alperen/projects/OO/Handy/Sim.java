@@ -17,7 +17,7 @@ public class Sim {
         return number;
     }
 
-    public void doCell(String targetNumber){
+    public void doCall(String targetNumber){
         System.out.println("Calling " + targetNumber + " from " + this.number);
     }
 
